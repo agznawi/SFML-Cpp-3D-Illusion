@@ -51,7 +51,18 @@ int main(int argc, char** argv[])
 			{
 				window.close();
 			}
+			if (event.key.code == sf::Keyboard::F11)
+			{
+				window.create(sf::VideoMode(WIDTH, HEIGHT),
+					"Moon, Earth, Sun, Spaghetti Way!", sf::Style::Fullscreen);
+			}
+			if (event.key.code == sf::Keyboard::Escape)
+			{
+				window.create(sf::VideoMode(WIDTH, HEIGHT),
+					"Moon, Earth, Sun, Spaghetti Way!");
+			}
 		}
+
 
     // ----- Update -----
 		// Update angles of Earth and moon
