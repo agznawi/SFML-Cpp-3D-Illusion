@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include <iostream>
+#include <string>
 
 const unsigned int WIDTH = 800;
 const unsigned int HEIGHT = 600;
@@ -118,10 +118,6 @@ int main(int argc, char** argv[])
 		if (soundPosition.z > 0.0f)
 			soundPosition.z = 0.0f;		
 		sound.setPosition(soundPosition);
-
-		//std::cout << sound.getPosition().x << ", ";
-		//std::cout << sound.getPosition().y << ", ";
-		//std::cout << sound.getPosition().z << std::endl;
 
 		window.clear();
 		window.draw(background);
