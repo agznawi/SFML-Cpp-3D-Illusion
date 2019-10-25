@@ -1,11 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include <string>
 
 const unsigned int WIDTH = 800;
 const unsigned int HEIGHT = 600;
 const float DEPTH = -700.0f; // for sound
-const std::string WINDOW_TITLE = "Moon, Earth, Sun, Spaghetti Way!";
+#define WINDOW_TITLE "Moon, Earth, Sun, Spaghetti Way!"
 
 int main(int argc, char** argv[])
 {
